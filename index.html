@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Documentação pública do Claude Continuity, ferramenta pessoal de preservação e recuperação de históricos locais.">
+<title>Início e termos de uso | Claude Continuity</title>
+<style>body{font:18px/1.65 system-ui,sans-serif;color:#202b35;background:#f7f8fa;margin:0}main{max-width:780px;margin:auto;padding:40px 24px}h1,h2{line-height:1.2}h1{font-size:2.3rem}h2{margin-top:2rem}a{color:#164e96;text-underline-offset:3px}a:focus-visible{outline:3px solid #164e96;outline-offset:4px}nav{display:flex;gap:24px;flex-wrap:wrap;border-bottom:1px solid #ccd3dc;padding-bottom:18px}footer{margin-top:40px;border-top:1px solid #ccd3dc;padding-top:18px;font-size:.9rem}p,li{overflow-wrap:anywhere}.note{padding:16px;background:#e9eef5;border-left:4px solid #164e96}</style>
+</head>
+<body><main>
+<nav aria-label="Navegação principal"><a href="./">Início e termos</a><a href="privacy.html">Privacidade</a></nav>
+<h1>Claude Continuity</h1>
+<p>Ferramenta pessoal em desenvolvimento para preservar, verificar e recuperar históricos locais, configurações e outros arquivos autorizados do Claude Code no Windows.</p>
+<p class="note">O sistema está em fase de piloto. A recuperação e a continuidade de históricos reais ainda não estão homologadas. Esta página apresenta o aplicativo e não oferece acesso aos backups.</p>
+<h2>Como funciona</h2>
+<ul><li>A aplicação e os dados de trabalho permanecem no computador do proprietário.</li><li>O Restic é utilizado no piloto para backups criptografados e versionados.</li><li>O Rclone conecta o computador ao Google Drive mediante autorização direta do proprietário no Google.</li><li>A cópia de backups para o Drive depende de autorização específica. A configuração da conexão não inicia envios automaticamente.</li></ul>
+<h2>Acesso ao Google Drive</h2>
+<p>O aplicativo solicita apenas a permissão <code>drive.file</code>, para trabalhar com arquivos criados por ele ou explicitamente disponibilizados ao aplicativo. Não solicita acesso geral a todo o Drive. A conexão local independe das contas utilizadas no Codex ou no ChatGPT.</p>
+<p>A integração é destinada a armazenar cópias criptografadas autorizadas. Senhas de recuperação e credenciais OAuth não devem fazer parte dos arquivos enviados.</p>
+<h2 id="termos">Termos de uso</h2>
+<p>Este aplicativo é destinado ao uso pessoal do proprietário. Use somente dados e contas para os quais você tenha autorização. Nenhuma parte desta documentação autoriza captura de dados de terceiros, alteração de autenticação ou acesso indevido.</p>
+<p>O software está em desenvolvimento e pode conter falhas. O proprietário deve validar a restauração, manter cópias independentes e guardar a senha de recuperação separadamente antes de confiar dados importantes ao sistema. Esta documentação não promete recuperação garantida nem disponibilidade contínua do Google Drive.</p>
+<p>O armazenamento e a autorização do Google também estão sujeitos aos termos aplicáveis da sua conta Google. Claude Continuity é um projeto independente, sem afiliação oficial com Anthropic, Google ou OpenAI.</p>
+<h2>Privacidade e contato</h2>
+<p>Consulte a <a href="privacy.html">Política de Privacidade</a>. Para assuntos públicos sobre o aplicativo, use o <a href="https://github.com/HuanBellini/claude-continuity-public-docs/issues">canal de contato no GitHub</a>. Não publique dados pessoais, históricos, senhas ou tokens.</p>
+<footer>Responsável: HuanBellini. Atualizado em 25 de novembro de 2026.<br>Documentação pública. Não envie credenciais ou históricos por este site.</footer>
+</main></body>
+</html>
